@@ -1,0 +1,31 @@
+Program SoalNo3;
+Uses CRT;
+var NIM : String[9];
+    Nm  : String[25];
+    nh  : Char;
+    tgs, uts, fnl, tot : Real;
+Begin
+     ClrScr;
+     Write('NIM   : '); Readln(NIM);
+     Write('Nama  : '); Readln(Nm);
+     Write('Tugas : '); Readln(tgs);
+     Write('MID   : '); Readln(mid);
+     Write('Final : '); Readln(fnl);
+     tot := 0.2*tgs + 0.3*Mid + 0.5*fnl;
+     If tot >= 80 Then nh := 'A' Else
+     If tot >= 70 Then nh := 'B' Else
+     If tot >= 51 Then nh := 'C' Else
+     If tot >= 41 Then nh := 'D' Else
+     nh := 'E';
+     Clrscr;
+     Writeln('        DAFTAR NILAI  MAHASISWA');
+     Writeln('          JURUSAN INFORMATIKA');
+     Writeln;
+     Write('NIM Mahasiwa     : ',NIM);
+     Writeln('  Nama Mahasiswa : ',Nm);
+     Writeln('Nilai Tugas      : ',tgs:3:2);
+     Writeln('Nilai Mid Test   : ',mid:3:2);
+     Writeln('Nilai final Test : ', fnl:3:2);
+     Write('Total Nilai      : ',tot:3:2);
+     Writeln('   Nilai Huruf : ',nh);
+End.
